@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -14,19 +27,15 @@ ul {
     gap: 20px;
 }
 
-li {
-    transition: margin 0.3s ease;
-}
-
 li a {
     display: block;
-    font-family: "Open Sans", sans-serif;
     text-align: center;
     padding: 18px 20px;
     text-decoration: none;
     font-size: 28px;
     color: #fff;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    font-family: "Play", sans-serif;
 }
 
 li a:hover {
@@ -36,11 +45,44 @@ li a:hover {
     transform: scale(1.1);
 }
 
-body {
-    margin: 0;
-    padding: 0;
+.hero-banner {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+    background-image: url('/images/c87fc3-ONR8RjvE6eqSIJ30E66L-g.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-main {
-    margin-top: 80px;
+.hero-banner h1 {
+    font-size: 4rem;
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-onderstukje {
+    height: calc(100vh - 80px);
+    background-color: #f4f4f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    font-family: "Play", sans-serif;
+    font-size: 1.5rem;
+    background-image: url(/images/las-vegas-buildings-hd.jpg);
+    z-index: 1;
+}
+.talking-hero{
+    display: flex;
+    width: 60rem;
+    height: 40rem;
+    background-color: #F4F1BB;
+    z-index: 2;
 }
