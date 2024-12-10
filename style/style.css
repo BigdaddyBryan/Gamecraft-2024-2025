@@ -47,28 +47,47 @@ li a:hover {
 
 .hero-banner {
     margin-top: 80px;
-    height: calc(100vh - 80px);
-    background-image: url('/images/c87fc3-ONR8RjvE6eqSIJ30E66L-g.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 
 .hero-banner h1 {
+    position: relative;
+    z-index: 2;
     font-size: 4rem;
     font-family: "Play", sans-serif;
     font-weight: 700;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 }
 
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#myVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .hero-onderstukje {
-    height: calc(100vh - 80px);
-    background-color: #f4f4f9;
+    height: 100vh;
+    background-image: url('/images/las-vegas-buildings-hd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -76,13 +95,16 @@ li a:hover {
     color: #333;
     font-family: "Play", sans-serif;
     font-size: 1.5rem;
-    background-image: url(/images/las-vegas-buildings-hd.jpg);
-    z-index: 1;
+    position: relative;
 }
-.talking-hero{
-    display: flex;
+
+.talking-hero {
     width: 60rem;
     height: 40rem;
-    background-color: #F4F1BB;
-    z-index: 2;
+    background-color: rgba(244, 241, 187, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
